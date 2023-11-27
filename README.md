@@ -15,3 +15,5 @@ A new Flutter project.
 - duration.toString().split(".").first : '.'를 기준으로 자른후 첫번째 인자만 가져옴
 - substring(2,7) : 문자열을 2부터 6까지 가져옴
 
+# 챌린지 과제
+- 리셋 후 재시작 버튼 만들기
