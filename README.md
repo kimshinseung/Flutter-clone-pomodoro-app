@@ -8,4 +8,6 @@ A new Flutter project.
 - Flexible을 사용해서 화면비율 조정 가능
 - alignment: Alignment.bottomCenter : 아래가운데로 조정
 - Expanded위젯 사용하면 끝까지 범위를 넓혀줌
+- Timer.periodic(
+  Duration(seconds: 1) : 매 1초마다 함수실행 
 
