@@ -11,7 +11,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  static const twentyFiveMinutes = 2500;
+  static const twentyFiveMinutes = 1500;
   int totalSeconds = twentyFiveMinutes;
   bool isRunning = false;
   int totalPomodoros = 0;
@@ -46,6 +46,13 @@ class _HomeScreenState extends State<HomeScreen> {
     setState(() {
       isRunning = false;
     });
+  }
+
+  void reStartPressed(){
+    setState(() {
+      totalSeconds = twentyFiveMinutes;
+    });
+
   }
 
   String format(int seconds){
@@ -113,6 +120,11 @@ class _HomeScreenState extends State<HomeScreen> {
                           color: Theme.of(context).textTheme.headline1!.color,
                         ),
                         ),
+                        IconButton(
+                            iconSize: 32,
+                            color: Theme.of(context).backgroundColor,
+                            onPressed: reStartPressed
+                            , icon: Icon(Icons.restart_alt_outlined)),
                       ],
                     ),
           ),
